@@ -6,12 +6,16 @@ import Home from "./Home.tsx";
 import Work from "./Work.tsx";
 import Art from "./Art.tsx";
 import Resume from "./Resume.tsx";
+import DesignDetail from "./DesignDetail.tsx";
+import ExperienceDetail from "./ExperienceDetail.tsx";
 
 const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/work" element={<Work />} />
+      <Route path="/design/:id" element={<DesignDetail />} />
+      <Route path="/experience/:id" element={<ExperienceDetail />} />
       <Route path="/art" element={<Art />} />
       <Route path="/resume" element={<Resume />} />
     </Routes>

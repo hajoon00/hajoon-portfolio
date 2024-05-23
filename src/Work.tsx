@@ -1,27 +1,15 @@
 import "./index.css";
 import "./App.css";
-import Design from "./Design.tsx";
-import Pensa from "./components/Pensa.tsx";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-
-const Router = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Work />} />
-      <Route path="/k-pensa" element={<Pensa />} />
-    </Routes>
-  );
-};
+import Design from "./components/Design.tsx";
+import Experience from "./components/Experience.tsx";
 
 function Work() {
   return (
-    <BrowserRouter>
-      <>
-        <Design />
+    <>
+      <Experience />
 
-        <Pensa />
-      </>
-    </BrowserRouter>
+      <Design />
+    </>
   );
 }
 
