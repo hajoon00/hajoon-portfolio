@@ -1,6 +1,6 @@
 import "./index.css";
 import "./App.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Art() {
   const [selectedTab, setSelectedTab] = useState("digitalArt");
