@@ -15,13 +15,15 @@
 }
 
 @layer base {
+    
+
     h1 {
         @apply text-4xl;
-        font-family: 'Montserrat-Bold', sans-serif;
+        /* font-family: 'Montserrat-Bold', sans-serif; */
     }
     h2 {
         @apply text-3xl;
-        font-family: 'Montserrat-Bold', sans-serif;
+        /* font-family: 'Montserrat-Bold', sans-serif; */
     }
     /* ... */
 }

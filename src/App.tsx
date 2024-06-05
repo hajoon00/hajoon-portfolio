@@ -26,7 +26,7 @@ function App() {
   return (
     <BrowserRouter>
       <>
-        <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+        <nav className="bg-white fixed w-full z-40 top-0 start-0 border-b border-gray-200">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <NavLink to="/" end>
               <span className="self-center text-2xl font-semibold whitespace-nowrap">
@@ -44,8 +44,8 @@ function App() {
                     to="/"
                     className={({ isActive }) =>
                       isActive
-                        ? "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                        ? "block py-2 px-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0"
+                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
                     }
                     end
                   >
@@ -57,8 +57,8 @@ function App() {
                     to="/work"
                     className={({ isActive }) =>
                       isActive
-                        ? "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                        ? "block py-2 px-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0"
+                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
                     }
                   >
                     Work
@@ -69,8 +69,8 @@ function App() {
                     to="/art"
                     className={({ isActive }) =>
                       isActive
-                        ? "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                        ? "block py-2 px-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0"
+                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
                     }
                   >
                     Art
@@ -81,8 +81,8 @@ function App() {
                     to="/resume"
                     className={({ isActive }) =>
                       isActive
-                        ? "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                        ? "block py-2 px-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0"
+                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
                     }
                   >
                     RESUME

@@ -6,64 +6,61 @@ const posts = [
   {
     id: 101,
     title: "CooKR",
-    href: "#",
-    imageUrl: "src/assets/demo.png",
-    description: "hello.",
-    date: "Spring 2020",
-    hashtags: ["Marketing", "Design"],
+    imageUrl: "public/previews/Cookr-preview.png",
+    description: "외국 거주자들을 위한 한식 레시피 앱",
+    date: "Spring 2024",
+    hashtags: ["Product Design", "UI/UX"],
   },
   {
     id: 102,
     title: "DevFlow",
-    href: "#",
-    imageUrl: "src/assets/demo.png",
-    description: "hello.",
-    date: "Mar 16, 2020",
-    hashtags: ["Marketing", "Design"],
+    imageUrl: "public/previews/Cookr-preview.png",
+    description: "프로그래머들을 위한 코드 정리 앱",
+    date: "Spring, 2024",
+    hashtags: ["Product Design", "UI/UX", "Frontend"],
   },
   {
     id: 103,
     title: "Path@PENN Redesign",
-    href: "#",
-    imageUrl: "src/assets/demo.png",
-    description: "hello.",
-    date: "Mar 16, 2020",
-    hashtags: ["Marketing", "Design"],
+    imageUrl: "public/previews/Cookr-preview.png",
+    description: "유펜 수강신청 포털 리디자인",
+    date: "Spring 2024",
+    hashtags: ["UI/UX"],
   },
   {
     id: 104,
-    title: "LoGlobe",
-    href: "#",
-    imageUrl: "src/assets/demo.png",
-    description: "hello.",
-    date: "Mar 16, 2020",
-    hashtags: ["Marketing", "Design"],
+    title: "Biennial Rebranding",
+    imageUrl: "public/previews/Cookr-preview.png",
+    description: "서울 비엔날레 리브랜딩",
+    date: "Fall 2022",
+    hashtags: ["Product Design", "UI/UX"],
   },
   // More posts...
 ];
 
 function Design() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-stone-50 py-24 sm:py-32">
+      <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Case Studies
+            Case Study
           </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">Design.</p>
+          <p className="mt-2 text-lg leading-8 text-gray-600">
+            수년간의 개인 디자인 프로젝트입니다.
+          </p>
         </div>
-        <div className="mt-10 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="mt-10 grid gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
           {posts.map((post) => (
-            <Link to={`/design/${post.id}`}>
-              <article
-                key={post.id}
-                className="flex flex-col items-start justify-between bg-white rounded-lg shadow-md overflow-hidden"
-              >
-                <img
-                  className="w-full h-48 object-cover"
-                  src={post.imageUrl}
-                  alt={post.title}
-                />
+            <Link to={`/design/${post.id}`} key={post.id}>
+              <article className="flex flex-col items-start justify-between bg-white rounded-lg border-2 border-neutral-100 overflow-hidden">
+                <div className="w-full aspect-w-5 aspect-h-3">
+                  <img
+                    className="object-contain"
+                    src={post.imageUrl}
+                    alt={post.title}
+                  />
+                </div>
 
                 <div className="p-6">
                   <div className="font-bold text-xl mb-2">{post.title}</div>
