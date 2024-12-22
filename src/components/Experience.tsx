@@ -2,11 +2,15 @@ import { Link } from "react-router-dom";
 import "../index.css";
 import "../App.css";
 
+// 이미지 파일 import
+import PensaLogo from "/previews/Pensa-logo.svg";
+import JaeteaPreview from "/previews/jaetea-preview.png";
+
 const posts = [
   {
     id: 1,
     title: "K-PEnSA Marketing Chair",
-    imageUrl: "public/previews/Pensa-logo.svg",
+    imageUrl: PensaLogo,
     description: "마케팅 팀장 / 디자이너",
     date: "Fall 2023 - Spring 2024",
     hashtags: ["마케팅", "그래픽 디자인"],
@@ -14,12 +18,11 @@ const posts = [
   {
     id: 2,
     title: "유학 읽어주는 남자",
-    imageUrl: "public/previews/jaetea-preview.png",
+    imageUrl: JaeteaPreview,
     description: "창립 멤버 / 디자이너 / 컨텐츠 디렉터",
     date: "Spring 2019 - Fall 2020",
     hashtags: ["마케팅", "그래픽 디자인"],
   },
-
   // More posts...
 ];
 
@@ -42,7 +45,7 @@ function Experience() {
                 <article className="flex flex-col items-start justify-between bg-white rounded-lg border-2 border-neutral-100 overflow-hidden">
                   <div className="w-full aspect-w-5 aspect-h-3">
                     <img
-                      className="object-contain"
+                      className="object-contain p-12"
                       src={post.imageUrl}
                       alt={post.title}
                     />

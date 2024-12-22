@@ -7,6 +7,11 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="src/main.tsx"></script>
+    <!-- Vite injects the bundled JS file automatically, so no need to manually add it -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- External Spline Viewer -->
+    <script type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.54/build/spline-viewer.js"></script>
   </body>
 </html>

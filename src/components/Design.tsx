@@ -5,32 +5,32 @@ import "../App.css";
 const posts = [
   {
     id: 101,
+    title: "Hasom Branding",
+    imageUrl: "/previews/Hasom-preview.png",
+    description: "고양이 하솜 브랜딩",
+    date: "Fall 2024",
+    hashtags: ["Branding", "Graphic Design"],
+  },
+  {
+    id: 102,
     title: "CooKR",
-    imageUrl: "public/previews/Cookr-preview.png",
+    imageUrl: "/previews/Cookr-preview.png",
     description: "외국 거주자들을 위한 한식 레시피 앱",
     date: "Spring 2024",
     hashtags: ["Product Design", "UI/UX"],
   },
   {
-    id: 102,
-    title: "DevFlow",
-    imageUrl: "public/previews/Cookr-preview.png",
-    description: "프로그래머들을 위한 코드 정리 앱",
-    date: "Spring, 2024",
-    hashtags: ["Product Design", "UI/UX", "Frontend"],
-  },
-  {
     id: 103,
-    title: "Path@PENN Redesign",
-    imageUrl: "public/previews/Cookr-preview.png",
-    description: "유펜 수강신청 포털 리디자인",
+    title: "DevFlow",
+    imageUrl: "/previews/DevFlow-preview.png",
+    description: "프로그래머들을 위한 코드 정리 앱",
     date: "Spring 2024",
-    hashtags: ["UI/UX"],
+    hashtags: ["Product Design", "UI/UX", "Frontend"],
   },
   {
     id: 104,
     title: "Biennial Rebranding",
-    imageUrl: "public/previews/Cookr-preview.png",
+    imageUrl: "/previews/Station-preview.png",
     description: "서울 비엔날레 리브랜딩",
     date: "Fall 2022",
     hashtags: ["Product Design", "UI/UX"],
@@ -56,7 +56,7 @@ function Design() {
               <article className="flex flex-col items-start justify-between bg-white rounded-lg border-2 border-neutral-100 overflow-hidden">
                 <div className="w-full aspect-w-5 aspect-h-3">
                   <img
-                    className="object-contain"
+                    className="object-cover"
                     src={post.imageUrl}
                     alt={post.title}
                   />
