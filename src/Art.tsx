@@ -196,9 +196,11 @@ function Art() {
           {/* Artworks */}
           <div data-tab-content="" className="p-5">
             <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-              {categories[selectedTab].map((art, index) => (
-                <ImageCard key={index} {...art} />
-              ))}
+              {(categories[selectedTab as CategoryKey] || []).map(
+                (art, index) => (
+                  <ImageCard key={index} {...art} />
+                )
+              )}
             </div>
           </div>
         </div>
