@@ -13,7 +13,7 @@ import PENSA_Study_8 from "/pensa/study-session/PENSA_Study_8.png";
 import PENSA_Study_9 from "/pensa/study-session/PENSA_Study_9.png";
 
 import Mixer from "/pensa/Mixer.png";
-import Pensa_Social_2 from "/pensa/Pensa_Social_2.png";
+import Pensa_Social_2 from "/pensa/PENSA_Social_2.png";
 import Movie_Night from "/pensa/Movie Night.png";
 import PENSA_EOY_Social_01 from "/pensa/PENSA EOY Social-01.png";
 import PENSA_EOY_Social_02 from "/pensa/PENSA EOY Social-02.png";
