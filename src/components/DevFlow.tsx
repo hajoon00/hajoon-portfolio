@@ -1,4 +1,4 @@
-import React, { RefObject, useRef } from "react";
+import { RefObject, useRef } from "react";
 import "../index.css";
 import "../App.css";
 
