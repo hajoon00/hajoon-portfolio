@@ -18,7 +18,7 @@ import Movie_Night from "/pensa/Movie Night.png";
 import PENSA_EOY_Social_01 from "/pensa/PENSA EOY Social-01.png";
 import PENSA_EOY_Social_02 from "/pensa/PENSA EOY Social-02.png";
 import PENSA_EOY_Social_03 from "/pensa/PENSA EOY Social-03.png";
-import PENSA_Introduction_Final from "/pensa/PENSA_Introduction_Final-09.png";
+import PENSA_Introduction_Final from "/pensa/Pensa_Introduction_Final-09.png";
 import MandM from "/pensa/M&M.png";
 import GBM from "/pensa/GBM.png";
 
