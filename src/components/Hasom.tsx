@@ -6,7 +6,7 @@ function Hasom() {
     <>
       <div className="w-full h-screen bg-white font-montserrat flex justify-center items-center">
         <div className="text-center">
-          <a
+          {/* <a
             href="/Hasom-brandbook.pdf"
             download="Hasom-brandbook.pdf"
             target="_blank"
@@ -18,7 +18,7 @@ function Hasom() {
             >
               브랜드북 다운로드
             </button>
-          </a>
+          </a> */}
         </div>
       </div>
     </>
