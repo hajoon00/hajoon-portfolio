@@ -1,30 +1,13 @@
 import { Link } from "react-router-dom";
 import Spline from "@splinetool/react-spline";
 
-const SplineSection = () => {
+function SplineSection() {
   return (
-    <div className="relative w-full h-screen">
+    <div>
       <Spline scene="https://prod.spline.design/3c5ACYOGESyNAVke/scene.splinecode" />
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center text-white">
-        <p className="text-xl">Scroll Down</p>
-        <svg
-          className="w-6 h-6 animate-bounce mx-auto mt-2"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </div>
     </div>
   );
-};
+}
 
 function Home() {
   return (
