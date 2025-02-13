@@ -28,53 +28,48 @@ const posts = [
 
 function Experience() {
   return (
-    <>
-      <div className="bg-stone-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Experiences
-            </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              컨텐츠 디렉터로서 다양한 경험을 가지고 있습니다.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
-            {posts.map((post) => (
-              <Link to={`/experience/${post.id}`} key={post.id}>
-                <article className="flex flex-col items-start justify-between bg-white rounded-lg border-2 border-neutral-100 overflow-hidden">
-                  <div className="w-full aspect-w-5 aspect-h-3">
-                    <img
-                      className="object-contain p-12"
-                      src={post.imageUrl}
-                      alt={post.title}
-                    />
+    <div className="bg-stone-50 py-12 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Experiences
+        </h2>
+        <p className="mt-2 text-lg leading-8 text-gray-600">
+          컨텐츠 디렉터로서 다양한 경험을 가지고 있습니다.
+        </p>
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-1">
+          {posts.map((post) => (
+            <Link
+              to={`/experience/${post.id}`}
+              key={post.id}
+              className="relative group"
+            >
+              <div className="relative bg-white w-full h-72 sm:h-96 overflow-hidden">
+                <img
+                  className="w-full h-full p-12 object-scale-down transition-transform duration-500 group-hover:scale-110"
+                  src={post.imageUrl}
+                  alt={post.title}
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
+                  <h3 className="text-xl font-bold">{post.title}</h3>
+                  <p className="mt-2">{post.description}</p>
+                  <p className="mt-1 text-sm">{post.date}</p>
+                  <div className="mt-4">
+                    {post.hashtags.map((hashtag, index) => (
+                      <span
+                        key={index}
+                        className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"
+                      >
+                        #{hashtag}
+                      </span>
+                    ))}
                   </div>
-
-                  <div className="p-6">
-                    <div className="font-bold text-xl mb-2">{post.title}</div>
-                    <p className="text-gray-700 text-base">
-                      {post.description}
-                    </p>
-                    <p className="text-gray-600 text-sm mt-2">{post.date}</p>
-                    <div className="pt-4">
-                      {post.hashtags.map((hashtag, index) => (
-                        <span
-                          key={index}
-                          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-                        >
-                          #{hashtag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </article>
-              </Link>
-            ))}
-          </div>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -40,44 +40,43 @@ const posts = [
 
 function Design() {
   return (
-    <div className="bg-stone-50 py-24 sm:py-32">
-      <div className="mx-auto max-w-5xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Case Study
-          </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            수년간의 개인 디자인 프로젝트입니다.
-          </p>
-        </div>
-        <div className="mt-10 grid gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+    <div className="bg-stone-50 py-12 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Case Study
+        </h2>
+        <p className="mt-2 text-lg leading-8 text-gray-600">
+          수년간의 개인 디자인 프로젝트입니다.
+        </p>
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-1">
           {posts.map((post) => (
-            <Link to={`/design/${post.id}`} key={post.id}>
-              <article className="flex flex-col items-start justify-between bg-white rounded-lg border-2 border-neutral-100 overflow-hidden">
-                <div className="w-full aspect-w-5 aspect-h-3">
-                  <img
-                    className="object-cover"
-                    src={post.imageUrl}
-                    alt={post.title}
-                  />
-                </div>
-
-                <div className="p-6">
-                  <div className="font-bold text-xl mb-2">{post.title}</div>
-                  <p className="text-gray-700 text-base">{post.description}</p>
-                  <p className="text-gray-600 text-sm mt-2">{post.date}</p>
-                  <div className="pt-4">
+            <Link
+              to={`/design/${post.id}`}
+              key={post.id}
+              className="relative group"
+            >
+              <div className="relative w-full h-72 sm:h-96 overflow-hidden">
+                <img
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src={post.imageUrl}
+                  alt={post.title}
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white text-center p-4">
+                  <h3 className="text-xl font-bold">{post.title}</h3>
+                  <p className="mt-2">{post.description}</p>
+                  <p className="mt-1 text-sm">{post.date}</p>
+                  <div className="mt-4">
                     {post.hashtags.map((hashtag, index) => (
                       <span
                         key={index}
-                        className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                        className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"
                       >
                         #{hashtag}
                       </span>
                     ))}
                   </div>
                 </div>
-              </article>
+              </div>
             </Link>
           ))}
         </div>
